@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.models.President;
 import org.example.repostiory.PresidentImpl;
 
 import java.sql.SQLException;
