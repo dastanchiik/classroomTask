@@ -11,6 +11,6 @@ public class App {
         User user12 = new User("Kubat",9);
         User user2 = new User("Kurmangazy",15);
         UserImpl user1 = new UserImpl();
-
+        user1.deleteById(4L);
     }
 }
