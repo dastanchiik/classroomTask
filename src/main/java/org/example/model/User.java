@@ -1,25 +1,21 @@
-package org.example.models;
+package org.example.model;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Table;
-
 @Getter
 @Setter
 @ToString
-public class President {
+public class User {
     private Long id;
-
     private String name;
-
     private int age;
 
-    public President() {
+    public User() {
     }
 
-    public President(String name, int age) {
+    public User(String name, int age) {
         this.name = name;
         this.age = age;
     }

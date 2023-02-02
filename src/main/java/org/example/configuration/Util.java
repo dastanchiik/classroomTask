@@ -5,15 +5,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Util {
-    private static Connection con;
-
+    private final Connection connection;
     public Util() throws SQLException {
-        con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
-                "postgres",
-                ",sql.111217S");
+        connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+                "postgres",",sql.111217S");
     }
 
-    public Connection getCon() {
-        return con;
+    public Connection getConnection() {
+        return connection;
     }
 }
