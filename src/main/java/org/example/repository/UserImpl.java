@@ -72,7 +72,7 @@ public class UserImpl implements UserRepo {
     public void deleteById(Long id) throws SQLException {
      PreparedStatement ps = connection.prepareStatement("delete from users where id ="+id+";");
      ps.executeUpdate();
-        System.out.println("deleted it's id -"+id);
+        System.out.println("deleted it's id: "+id);
     }
 
     @Override
